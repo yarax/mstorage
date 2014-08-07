@@ -1,0 +1,44 @@
+{
+  "name": "mstorage",
+  "version": "0.2.0",
+  "description": "Simple indexed key-value storage",
+  "keywords": [
+    "storage",
+    "key-value"
+  ],
+  "author": {
+    "name": "Roman Krivtsov",
+    "email": "raxpost@gmail.com",
+  },
+  "repository": {
+    "type": "https",
+    "url": "https://github.com/yarax/mstorage.git"
+  },
+  "bugs": {
+    "url": "http://github.com/jaredhanson/passport/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./lib",
+  "dependencies": {
+    "passport-strategy": "1.x.x",
+    "pause": "0.0.1"
+  },
+  "devDependencies": {
+    "mocha": "1.x.x",
+    "chai": "1.x.x",
+    "chai-connect-middleware": "0.3.x",
+    "chai-passport-strategy": "0.2.x",
+    "proxyquire": "0.5.x"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js test/**/*.test.js"
+  }
+}

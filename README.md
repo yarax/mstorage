@@ -15,32 +15,3 @@ The library allows you to keep indexed data in memory, provides fast searching a
     });
     
     
-```javascript
-    /**
-     * Check room+domain and return public room statistics. If domain param exists, it will check for correspondence
-     * @method
-     * @name Test#init
-     * @param {string} roomName - room name
-     * @param {string} domain - domain
-     * 
-     */
-    Test.prototype.init = function(parameters) {
-        if (parameters === undefined) {
-            parameters = {};
-        }
-        var deferred = Q.defer();
-
-        var domain = this.domain;
-        var path = '/init';
-
-        var body;
-        var queryParameters = {};
-        var headers = {};
-        var form = {};
-
-        if (parameters['roomName'] !== undefined) {
-            queryParameters['roomName'] = parameters['roomName'];
-        }
-
-
-```
